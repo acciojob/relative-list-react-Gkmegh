@@ -11,11 +11,11 @@ const App = () => {
     <div id="main">
       {/* Do not remove the main div */}
         <h2>Relatives to Visit</h2>
-          <ul>
+          <ol>
             {relatives.map(relative => (
               <li key={relative.key}>{relative.name}</li>
             ))}
-          </ul>
+          </ol>
     </div>
   )
 }
