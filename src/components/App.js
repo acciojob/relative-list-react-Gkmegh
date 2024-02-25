@@ -1,11 +1,23 @@
 import React from 'react'
 
 const App = () => {
+  const relatives = [
+    { key: 'relativeListItem1', name: 'Aunt Rita' },
+    { key: 'relativeListItem2', name: 'Uncle Ravi' },
+    { key: 'relativeListItem3', name: 'Cousin Priya' },
+    { key: 'relativeListItem4', name: 'Grandma Lakshmi' }
+  ];
   return (
     <div id="main">
-               {/* Do not remove the main div */}
+      {/* Do not remove the main div */}
+        <h2>Relatives to Visit</h2>
+          <ul>
+            {relatives.map(relative => (
+              <li key={relative.key}>{relative.name}</li>
+            ))}
+          </ul>
     </div>
   )
 }
 
-export default App
+export default App;
